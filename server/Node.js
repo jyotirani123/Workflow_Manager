@@ -13,11 +13,22 @@ const nodeConfig = {
             enable : true,
             type : "db" , 
             dbConfig : {
+                host : "localhost",
+                database : "workflow_manager",
                 userName : "root",
                 password : "password"
             }
         },
-        output : true, 
+        output :  {
+            enable : true,
+            type : "db" , 
+            dbConfig : {
+                host : "localhost",
+                database : "workflow_manager",
+                userName : "root",
+                password : "password"
+            }
+        }
     },
    
     name : "Node",
@@ -26,7 +37,7 @@ const nodeConfig = {
 }
 class Node{
     
-    constructor({}){
-
+    constructor(nodeConfig){
+        this.nodeConfig = nodeConfig;
     }
 }
