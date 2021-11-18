@@ -1,4 +1,4 @@
-const transformNode = require("./TransformNode");
+const transformNode = require("./TransformJob");
 
 class TransformConfig{
 
